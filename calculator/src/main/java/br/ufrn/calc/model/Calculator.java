@@ -34,7 +34,8 @@ package br.ufrn.calc.model;
 public class Calculator {
 
     /**
-     * IMPLEMENTE ESSE MÉTODO 1
+     * EVOLUÇÃO 1
+     * IMPLEMENTE ESSE MÉTODO
      *
      * Implementação Sugerida: return a+b;
      * @param a
@@ -43,8 +44,11 @@ public class Calculator {
      */
     public int sum(int a, int b) { return 0; }
 
+
+
     /**
-     * IMPLEMENTE ESSE MÉTODO 2
+     * EVOLUÇÃO 2
+     * IMPLEMENTE ESSE MÉTODO
      *
      * Implementação Sugerida: return a-b;
      * @param a
@@ -53,8 +57,12 @@ public class Calculator {
      */
     public int sub(int a, int b) { return 0; }
 
+
+
+
     /**
-     * IMPLEMENTE ESSE MÉTODO 3
+     * EVOLUÇÃO 3
+     * IMPLEMENTE ESSE MÉTODO
      *
      * Implementação Sugerida: return a+*b;
      * @param a
@@ -62,6 +70,9 @@ public class Calculator {
      * @return
      */
     public int mult(int a, int b) { return 0; }
+
+
+
 
     /**
      * CORRIJA ESSE MÉTODO EM COMMITS SEPARADOS
@@ -72,19 +83,14 @@ public class Calculator {
      *     throw new IllegalArgumentException("Can not divide by zero");
      * return a/b;
      *
-     * Fazer em 3 etapas, cada correção, um commit diferente.
+     * Fazer em 2 etapas, cada correção, um commit diferente.
      *
      * Primeiro:  trocar return a%b;  por return a/b;
      *
-     * Depois: adicionar no início do método:
+     * Depois: adicionar o tratamento no início do método:
      *
      * if(b == 0)
-     *    throw new IllegalArgumentException("Can not divide bai zero");
-     *
-     * Por Último: corrigir o texto para:
-     *
-     * if(b == 0)
-     *      throw new IllegalArgumentException("Can not divide by zero");
+     *    throw new IllegalArgumentException("Can not divide by zero");
      *
      * @param a
      * @param b
@@ -94,8 +100,13 @@ public class Calculator {
         return a%b;
     }
 
+
+
+
+
     /**
-     * IMPLEMENTE ESSE MÉTODO 4
+     * EVOLUÇÃO 4
+     * IMPLEMENTE ESSE MÉTODO
      *
      * Implementação Sugerida: return Math.pow(a, b);
      * @param a
@@ -104,38 +115,36 @@ public class Calculator {
      */
     public double pow(double a, double b) { return 0; }
 
+
+
+
+
+
     /**
-     * IMPLEMENTE ESSE MÉTODO 5
+     * CORRIJA ESSE MÉTODO EM COMMITS SEPARADOS
      *
      * Implementação Sugerida:
      *
      * if(a < 0)
-     *           throw new IllegalArgumentException("There is no square root of negative number");
+     *     throw new IllegalArgumentException("There is no square root of negative number");
      *
      * return Math.sqrt(a);
      *
-     * @param a
-     * @return
-     */
-    public double square(double a) { return 0; }
-
-    /**
-     * IMPLEMENTE ESSE MÉTODO 6
+     * Fazer em 2 etapas, cada correção, um commit diferente.
      *
-     * Implementação Sugerida: return Math.exp(a);
-     * @param a
-     * @return
-     */
-    public double exp(double a) { return 0; }
-
-    /**
-     * IMPLEMENTE ESSE MÉTODO 7
+     * Primeiro:  trocar return Math.abs(a);  por return Math.sqrt(a);
      *
-     * Implementação Sugerida: return Math.log(a);
+     * Depois: adicionar o tratamento no início do método:
+     *
+     * if(b == 0)
+     *    throw new IllegalArgumentException("There is no square root of negative number");
+     *
      * @param a
      * @return
      */
-    public double log(double a) { return 0; }
+    public double square(double a) {
+        return Math.abs(a);
+    }
 
 
 }

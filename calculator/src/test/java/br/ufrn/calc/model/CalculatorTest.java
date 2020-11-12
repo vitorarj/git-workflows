@@ -76,16 +76,12 @@ class CalculatorTest {
     @Test
     void squareTest() { Assertions.assertEquals(3, new Calculator().square(9)); }
 
-    /**
-     * Simple exponential operation calculate test
-     */
-    @Test
-    void expTest() { Assertions.assertEquals(20.085536923187668, new Calculator().exp(3)); }
 
     /**
-     * Simple logarithm operation calculate test
+     * Division by zero operation calculate test
      */
     @Test
-    void logTest() { Assertions.assertEquals(3, new Calculator().log(20.085536923187668)); }
+    void squareNegativeNumberTest() { Assertions.assertThrows(IllegalArgumentException.class, () -> { new Calculator().square(-9); }); }
+
 
 }
