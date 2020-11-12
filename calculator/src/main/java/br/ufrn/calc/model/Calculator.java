@@ -85,12 +85,13 @@ public class Calculator {
      *
      * Fazer em 2 etapas, cada correção, um commit diferente.
      *
-     * Primeiro:  trocar return a%b;  por return a/b;
+     * Desenvolvedor 1:  apenas trocar return a%b;  por return a/b;
      *
-     * Depois: adicionar o tratamento no início do método:
+     * Desenvolvedor 2: adicionar a correção completa:
      *
      * if(b == 0)
      *    throw new IllegalArgumentException("Can not divide by zero");
+     * return a/b;
      *
      * @param a
      * @param b
@@ -132,12 +133,13 @@ public class Calculator {
      *
      * Fazer em 2 etapas, cada correção, um commit diferente.
      *
-     * Primeiro:  trocar return Math.abs(a);  por return Math.sqrt(a);
+     * Desenvolvedor 1:  trocar return Math.abs(a);  por return Math.sqrt(a);
      *
-     * Depois: adicionar o tratamento no início do método:
+     * Desenvolvedor 2: adicionar a correção completa:
      *
      * if(b == 0)
      *    throw new IllegalArgumentException("There is no square root of negative number");
+     *  return Math.sqrt(a);
      *
      * @param a
      * @return
