@@ -27,7 +27,7 @@
 package br.ufrn.calc.model;
 
 /**
- * Implementation of a calculator
+ * Implementation of calculator
  *
  * Jadson Santos - jadsonjs@gmail.com
  */
