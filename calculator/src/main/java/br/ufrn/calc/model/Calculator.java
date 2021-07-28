@@ -98,8 +98,11 @@ public class Calculator {
      * @return
      */
     public int div(int a, int b) {
+<<<<<<< HEAD
         if(b == 0)
             throw new IllegalArgumentException("Can not divide by zero");
+=======
+>>>>>>> c0824f12fa2f47a2381575a2eca760e1cf0a252f
         return a/b;
     }
 
