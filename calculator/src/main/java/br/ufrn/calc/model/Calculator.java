@@ -98,7 +98,9 @@ public class Calculator {
      * @return
      */
     public int div(int a, int b) {
-        return a%b;
+        if(b == 0)
+            throw new IllegalArgumentException("Can not divide by zero");
+        return a/b;
     }
 
 
@@ -114,7 +116,7 @@ public class Calculator {
      * @param b
      * @return
      */
-    public double pow(double a, double b) { return 0; }
+    public double pow(double a, double b) { return Math.pow(a, b); }
 
 
 
