@@ -147,7 +147,7 @@ public class Calculator {
      * @return
      */
     public double square(double a) {
-        return Math.abs(a);
+        return Math.sqrt(a);
     }
 
 
